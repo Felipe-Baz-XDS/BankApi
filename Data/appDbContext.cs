@@ -9,7 +9,8 @@ namespace BankApi.Data
 {
     public class appDbContext : DbContext
     {
-        public DbSet<User> Users { get; set;}
+        public DbSet<User> Users { get; set; }
+        public DbSet<ContaCorrente> Contas { get; set; }
 
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder) 
